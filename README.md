@@ -20,7 +20,7 @@ pip install -e /path/to/repository/python
 
 #### USAGE
 ``` python
-from opensky_api import OenSkyApi
+from opensky_api import OpenSkyApi
 api = OpenSkyApi()
 s = api.get_states()
 print(s)
