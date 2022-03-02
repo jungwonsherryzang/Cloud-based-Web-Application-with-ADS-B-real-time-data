@@ -1,3 +1,6 @@
-# Cloud-Based-Web-Application-for-Real-Time-Flight-Information
+# Cloud-Based Web Application for Real-Time Flight Information
 Embry Riddle Aeronautical University CS540 Semester Project
-## 
+
+Currently, most aviation research websites estimate an average of 150,000 flights a day around the world and 5,000 concurrent flights in the US national airspace including all commercial planes, small planes, private jets, and helicopters. Generally, for one flight, there are many related stakeholders within that process. These items are provided through real-time data such as flight, aeronautical, weather, and airspace. Therefore, it has become increasingly important for each of these elements to be organized and combined, and then ultimately shared among industry partners and even non- industry individuals. This project aims to further heighten the importance of delivering accurate information to the right people at the right time through the use of cloud computing in the aviation industry. The aircraft industry is mostly affected by unexpected factors such as weather, airport status, mechanical delays, impacts from the COVID-19 pandemic, and so on. Those unpredictable elements can cause flight delays and even flight cancellations. This project aims to query and record real-time flight status of all airline flights at the Daytona Beach International Airport into a database and then share this information on through a web application using cloud computing.
+
+
