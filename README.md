@@ -26,7 +26,5 @@ s = api.get_states()
 print(s)
 ```
 
-## LIVE INTERACTION MAP
-![plot](./Users/sherryjungwonzang/Desktop/ERAU SE/CS540/project resources/map1.png)
-![plot](./Users/sherryjungwonzang/Desktop/ERAU SE/CS540/project resources/map.png)
+
 
