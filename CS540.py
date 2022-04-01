@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-
-By Michael Fornito, Kyrsh Rejendran, Thomas Fiello
-
-"""
 #!pip3 install flightradar24
 #import mysql.connector
 #!pip3 install --upgrade google-cloud
