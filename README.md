@@ -37,6 +37,30 @@ function exportJsonFile (fileName, data) {
 };
 module.exports = exportJsonFile;
 ```
-
+## FETCHED OPENSKY DATA EXAMPLE
+``` json
+{
+    "time": 1649623672,
+    "states": [
+        [
+            "4b1815",
+            "SWR24KT ",
+            "Switzerland",
+            1649623672,
+            1649623672,
+            8.412,
+            47.2735,
+            4236.72,
+            false,
+            172.75,
+            53.23,
+            -8.13,
+            null,
+            4320.54,
+            "2321",
+            false,
+            0
+        ],
+```
 
 
