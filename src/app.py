@@ -20,6 +20,7 @@ app = Flask(__name__)
 def hello():
     """Return a simple HTML page with a friendly message."""
     query_job = bigquery_client.query(
+        #now, this is for testing all ERAU flights
         """
         SELECT 
           callsign, longitude, latitude, velocity 
