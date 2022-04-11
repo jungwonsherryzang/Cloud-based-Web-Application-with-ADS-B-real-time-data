@@ -33,7 +33,7 @@ pip3 install flask
 This is the testing query data from out dataset that currently flying Embry Riddle aircraft
 ``` SQL
 SELECT callsign, longitude, latitude, velocity
-FROM 'cs540-project.Flights.AllData
+FROM 'cs540-project.Flights.AllData'
 WHERE callsign LIKE 'ERU%'
 ```
 
