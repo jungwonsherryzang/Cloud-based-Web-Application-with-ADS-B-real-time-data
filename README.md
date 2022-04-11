@@ -21,13 +21,22 @@ https://colab.research.google.com/drive/12wkrpM6ncUQMGkt5HSJbrQJqc7NhwbOc#scroll
 ## PYTHON API WITH BIGQUERY
 It depends of the python-requests library http://docs.python-requests.org/
 
-## PYTHON INSTALLATION
+## PYTHON AND FLASK INSTALLATION 
 ``` python
 sudo python setup.py install
 ```
-
-or with pip
 ``` python
-pip install -e /path/to/repository/python
+pip3 install flask
 ```
+
+## BIGQUERY SERVER CONNECTION
+This is the testing query data from out dataset that currently flying Embry Riddle aircraft
+``` SQL
+SELECT callsign, longitude, latitude, velocity
+FROM 'cs540-project.Flights.AllData
+WHERE callsign LIKE 'ERU%'
+```
+
+## OUTCOME OF BIGQUERY SERVER CONNECTION AND EXPORTING QUERY
+<img width="1221" alt="BigQuery server" src="https://user-images.githubusercontent.com/91277856/162801455-5e1168fb-8364-475c-8dc7-3f3855036c35.png">
 
