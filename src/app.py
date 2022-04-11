@@ -22,27 +22,21 @@ def hello():
     query_job = bigquery_client.query(
         """
         SELECT 
-          * 
+          callsign, longitude, latitude, velocity 
         FROM 
           `cs540-project.Flights.AllData`
+        WHERE
+            `callsign` LIKE 'ERU%' 
         """
     )
     # Handle query_job result and return to flask to display
     res = query_job.result().to_dataframe()
+    res = res.to_html().replace('<table border="1"', '<table border="1" align="center"')
+    return render_template('index.html', message = res) #pass result to message
     #print(res, file=sys.stderr)
     #print(res)
     
 #    for row in res:
 #        output = "entries: " + str(row)
 
-
-
-    output = tabulate(res, headers='keys', tablefmt='psql')
-
-   
-    return render_template('index.html', message=output)
-
-if __name__ == '__main__':
-    signal(SIGINT, handler)
-    server_port = os.environ.get('PORT', '8080')
-    app.run(debug=False, port=server_port, host='0.0.0.0')
+    #output = tabulate(res, headers='keys', tablefmt='psql')
